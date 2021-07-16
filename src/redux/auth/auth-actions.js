@@ -24,6 +24,21 @@ const uploadAvatarRequest = createAction('auth/uploadAvatarRequest');
 const uploadAvatarSuccess = createAction('auth/uploadAvatarSuccess');
 const uploadAvatarError = createAction('auth/uploadAvatarError');
 
+// forgot password
+const forgotPasswordRequest = createAction('auth/forgotPasswordRequest');
+const forgotPasswordSuccess = createAction('auth/forgotPasswordSuccess');
+const forgotPasswordError = createAction('auth/forgotPasswordError');
+
+// verify resetToken
+const verifyResetTokenRequest = createAction('auth/verifyResetTokenRequest');
+const verifyResetTokenSuccess = createAction('auth/verifyResetTokenSuccess');
+const verifyResetTokenError = createAction('auth/verifyResetTokenError');
+
+// reset password
+const resetPasswordRequest = createAction('auth/resetPasswordRequest');
+const resetPasswordSuccess = createAction('auth/resetPasswordSuccess');
+const resetPasswordError = createAction('auth/resetPasswordError');
+
 const authActions = {
   regRequest,
   regSuccess,
@@ -40,6 +55,15 @@ const authActions = {
   uploadAvatarRequest,
   uploadAvatarSuccess,
   uploadAvatarError,
+  forgotPasswordRequest,
+  forgotPasswordSuccess,
+  forgotPasswordError,
+  resetPasswordRequest,
+  resetPasswordSuccess,
+  resetPasswordError,
+  verifyResetTokenRequest,
+  verifyResetTokenSuccess,
+  verifyResetTokenError,
 };
 
 export default authActions;
